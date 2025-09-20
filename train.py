@@ -44,8 +44,8 @@ def augment_dataset(df):
 
 # Load and augment dataset
 print("Loading and augmenting dataset...")
-df = pd.read_csv('star_wars_dataset.csv')
-df = df.dropna()
+df = pd.read_csv('star_wars_dataset.csv', usecols=['intent', 'pattern', 'response'])
+df.columns = ['intent', 'pattern', 'response']  # Ensure correct column names
 df = df[df['pattern'].str.strip() != '']
 
 # Augment the dataset
