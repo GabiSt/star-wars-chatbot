@@ -13,6 +13,7 @@ An intelligent chatbot that answers questions about the Star Wars universe using
 
 ## Project Structure
 
+```bash
 star-wars-chatbot/
 ├── train.py # Model training script
 ├── star_wars_dataset.csv # Training data
@@ -20,7 +21,7 @@ star-wars-chatbot/
 ├── sfx/ # Sound effects directory
 ├── requirements.txt # Python dependencies
 └── README.md
-
+```
 
 ## Installation
 
@@ -28,76 +29,60 @@ star-wars-chatbot/
 ```bash
 git clone https://github.com/GabiSt/star-wars-chatbot.git
 cd star-wars-chatbot
-
+```
 
 2. Install dependencies:
-
+```bash
 pip install -r requirements.txt
-
+```
 Add sound files to the sfx/ directory (see below for sources)
 
 
 ## Usage
 
 1. Train the model (optional - pre-trained model included):
-
+```bash
 python train.py
-
+```
 2. Run the chatbot
-
+```bash
 python star_wars_chat.py
-
+```
 
 ## Sound Effects
 
 1. The chatbot uses audio clips for certain responses. You can add these files to the sfx/ directory:
-
-    general-kenobi.mp3 - "General Kenobi" response
-
-    yoda-do-or-do-not.mp3 - Yoda's "Do or do not" quote
-
-    hello-there.mp3 - Obi-Wan's "Hello there"
-
-    lack-of-faith.mp3 - Vader's "Lack of faith" line
-
-    nooo.mp3 - Vader's "Nooo"
-
-    do-it.mp3 - Palpatine's "Do it"
-
+- general-kenobi.mp3 - "General Kenobi" response
+- yoda-do-or-do-not.mp3 - Yoda's "Do or do not" quote
+- hello-there.mp3 - Obi-Wan's "Hello there"
+- lack-of-faith.mp3 - Vader's "Lack of faith" line
+- nooo.mp3 - Vader's "Nooo"
+- do-it.mp3 - Palpatine's "Do it"
 
 ## Dataset
 
 The star_wars_dataset.csv file contains questions and answers about:
 
-    Characters (Luke Skywalker, Darth Vader, Yoda, etc.)
-
-    Concepts (The Force, Jedi, Sith)
-
-    Ships and locations
-
-    Movie information
+- Characters (Luke Skywalker, Darth Vader, Yoda, etc.)
+- Concepts (The Force, Jedi, Sith)
+- Ships and locations
+- Movie information
 
 
 ## Model Architecture
 
-    Embedding layer (128 dimensions)
-
-    Two LSTM layers (128 and 64 units)
-
-    Dropout for regularization (0.5)
-
-    Dense output layer with softmax activation
+- Embedding layer (128 dimensions)
+- Two LSTM layers (128 and 64 units)
+- Dropout for regularization (0.5)
+- Dense output layer with softmax activation
 
 ## Contributing
 
 Feel free to contribute by:
 
-    Adding more Star Wars questions and answers to the dataset
-
-    Improving the response generation
-
-    Enhancing the GUI
-
-    Adding more sound effects
+- Adding more Star Wars questions and answers to the dataset
+- Improving the response generation
+- Enhancing the GUI
+- Adding more sound effects
 
 This project is for educational purposes. Star Wars is a trademark of Lucasfilm Ltd. and Disney.
