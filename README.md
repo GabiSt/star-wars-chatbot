@@ -76,6 +76,10 @@ The star_wars_dataset.csv file contains questions and answers about:
 - Dropout for regularization (0.5)
 - Dense output layer with softmax activation
 
+## UI Preview
+
+![Star Wars Chatbot](star-wars-chatbot.png)
+
 ## Contributing
 
 Feel free to contribute by:
